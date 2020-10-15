@@ -1,0 +1,23 @@
+{
+  "name": "octozen-waypoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjohnbo/octozen-waypoint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imjohnbo/octozen-waypoint/issues"
+  },
+  "homepage": "https://github.com/imjohnbo/octozen-waypoint#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
