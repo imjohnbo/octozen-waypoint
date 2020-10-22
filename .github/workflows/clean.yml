@@ -1,9 +1,7 @@
 on:
-  push:
-    branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
-    - master          # triggers on pushes that contain changes in master
+  workflow_dispatch:
 
-name: Deploy
+name: Clean
 
 env:
   WAYPOINT_SERVER_TOKEN: ${{ secrets.WAYPOINT_SERVER_TOKEN }}
@@ -22,5 +20,4 @@ jobs:
       - uses: imjohnbo/action-setup-waypoint@main
         with:
           version: '0.1.3'
-      - run: waypoint init
-      - run: waypoint up
+      - run: waypoint destroy

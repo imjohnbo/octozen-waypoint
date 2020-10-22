@@ -11,6 +11,7 @@ app "octozen" {
 
     registry {
       use "docker" {
+        # Update this image name
         image = "octozen.azurecr.io/octozen"
         tag   = "latest"
       }
@@ -19,7 +20,9 @@ app "octozen" {
 
   deploy {
     use "azure-container-instance" {
+      # Update this resource group
       resource_group = "octozen-waypoint"
+      # Update this location
       location       = "eastus"
       ports          = [8080]
 
